@@ -24,19 +24,19 @@ namespace WebPlatformAPI.Web.Data.Entities
         public string LastName { get; set; }
 
         [Display(Name = "Telefono 1")]
-        [MaxLength(1, ErrorMessage = "The {0} field can not have more than {1} characters.")]
+        [MaxLength(14, ErrorMessage = "The {0} field can not have more than {1} characters.")]
         public string Telephone { get; set; }
 
         [Display(Name = "Telefono 2")]
-        [MaxLength(1, ErrorMessage = "The {0} field can not have more than {1} characters.")]
+        [MaxLength(14, ErrorMessage = "The {0} field can not have more than {1} characters.")]
         public string Telephone1 { get; set; }
 
         [Display(Name = "Telefono 3")]
-        [MaxLength(1, ErrorMessage = "The {0} field can not have more than {1} characters.")]
+        [MaxLength(14, ErrorMessage = "The {0} field can not have more than {1} characters.")]
         public string Telephone2 { get; set; }
 
         [Display(Name = "Telefono 4")]
-        [MaxLength(1, ErrorMessage = "The {0} field can not have more than {1} characters.")]
+        [MaxLength(14, ErrorMessage = "The {0} field can not have more than {1} characters.")]
         public string Telephone3 { get; set; }
 
         [Display(Name = "Sexo")]

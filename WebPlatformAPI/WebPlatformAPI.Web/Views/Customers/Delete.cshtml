@@ -1,0 +1,129 @@
+﻿@model WebPlatformAPI.Web.Data.Entities.Customer
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Idinternal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Idinternal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Document)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Document)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Telephone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Telephone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Telephone1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Telephone1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Telephone2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Telephone2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Telephone3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Telephone3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Addres)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Addres)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CivilStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CivilStatus)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Company)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Company)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Job)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Job)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RNC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RNC)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Passport)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Passport)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nationality)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nationality)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreditLimit)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreditLimit)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

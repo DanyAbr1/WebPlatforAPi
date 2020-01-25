@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace WebPlatformAPI.Angular
+namespace WebPlatformAPI
 {
     public class Program
     {

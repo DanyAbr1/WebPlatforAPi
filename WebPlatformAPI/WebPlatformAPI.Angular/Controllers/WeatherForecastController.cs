@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace WebPlatformAPI.Angular.Controllers
+namespace WebPlatformAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

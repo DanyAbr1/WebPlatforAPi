@@ -1,6 +1,6 @@
 using System;
 
-namespace WebPlatformAPI.Angular
+namespace WebPlatformAPI
 {
     public class WeatherForecast
     {

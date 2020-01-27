@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebPlatformAPI.Common.Entities
+namespace WebPlatformAPI.Angular.Models
 {
     public class Cliente
     {
@@ -10,6 +8,8 @@ namespace WebPlatformAPI.Common.Entities
 
         public string Idcliente { get; set; }
 
+        [Required]
+        [MaxLength(50, ErrorMessage = "El campo {0} debe tener {1} caracteres o menos")]
         public string Nombre { get; set; }
 
         public string Nombre2 { get; set; }
@@ -18,6 +18,7 @@ namespace WebPlatformAPI.Common.Entities
 
         public string Apellido2 { get; set; }
 
+        [Required]
         public string Cedula { get; set; }
 
         public string Pasaporte { get; set; }

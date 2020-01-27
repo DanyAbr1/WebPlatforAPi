@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebPlatformAPI.Common.Entities;
+using WebPlatformAPI.Angular.Models;
 
 namespace WebPlatformAPI.Angular.Context
 {

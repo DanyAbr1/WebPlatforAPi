@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Linq;
 using WebPlatformAPI.Angular.Context;
 using WebPlatformAPI.Angular.Models;
 
 namespace WebPlatformAPI.Angular.Controllers
-{
+{   
+    [Route("[controller]")]
+    [ApiController]
     public class ClientesController : ControllerBase
     {
         private readonly ApplicationDbContext context;
@@ -14,12 +17,12 @@ namespace WebPlatformAPI.Angular.Controllers
             this.context = context;
         }
 
-        [HttpGet(Name = "Test")]
-        public ActionResult<Cliente> Get()
+        [HttpGet()]
+        public ActionResult<IEnumerable<Cliente>> Get()
         {
-            var cliente = context.clientes.ToList();
+            return context.clientes.ToList();
 
-            return Ok(cliente);
+            //return Ok(cliente);
         }
     }
 }

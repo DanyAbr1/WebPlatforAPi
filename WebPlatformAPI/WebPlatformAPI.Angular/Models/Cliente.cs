@@ -38,5 +38,7 @@ namespace WebPlatformAPI.Angular.Models
         public string Ciudad { get; set; }
 
         public string Municipio { get; set; }
+
+        public string Sexo { get; set; }
     }
 }

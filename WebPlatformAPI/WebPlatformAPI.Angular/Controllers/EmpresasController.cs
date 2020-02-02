@@ -10,7 +10,7 @@ using WebPlatformAPI.Angular.Models;
 
 namespace WebPlatformAPI.Angular.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class EmpresasController : ControllerBase
     {

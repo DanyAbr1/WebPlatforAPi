@@ -22,5 +22,6 @@ namespace WebPlatformAPI
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
     }
 }

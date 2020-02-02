@@ -1,0 +1,9 @@
+{
+  "solution": {
+    "path": "WebPlatformAPI.sln",
+    "projects": [
+      "WebPlatformAPI.Angular\\WebPlatformAPI.Angular.csproj",
+      "WebPlatformAPI.Common\\WebPlatformAPI.Common.csproj"
+    ]
+  }
+}

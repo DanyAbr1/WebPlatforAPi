@@ -12,5 +12,6 @@ namespace WebPlatformAPI.Angular.Context
         }
 
         public DbSet<Cliente> clientes { get; set; }
+        public DbSet<Empresa> Empresas { get; set; }
     }
 }

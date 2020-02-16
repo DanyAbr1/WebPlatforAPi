@@ -7,6 +7,7 @@ namespace WebPlatformAPI.Angular.Models
         [Key]
         [Required]
         public int Id { get; set; }
+        public string IdEmpresa { get; set; }
         [Required]
         [MaxLength(50, ErrorMessage = "El campo {0} debe tener {1} caracteres o menos")]
         public string Nombre { get; set; }

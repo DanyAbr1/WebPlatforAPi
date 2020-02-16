@@ -330,3 +330,5 @@ ASALocalRun/
 .mfractor/
 
 WebPlatformAPI/WebPlatformAPI.Web/WebPlatformAPI.Web.csproj
+
+WebPlatformAPI/WebPlatformAPI.Angular/ClientApp/package.json

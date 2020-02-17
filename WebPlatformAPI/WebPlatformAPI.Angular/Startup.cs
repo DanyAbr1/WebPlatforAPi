@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebPlatformAPI.Angular.Context;
+using WebPlatformAPI.Angular.Helppers;
 using WebPlatformAPI.Angular.Models;
 
 namespace WebPlatformAPI
@@ -36,6 +37,8 @@ namespace WebPlatformAPI
                 cfg.Password.RequireUppercase = false;
             }).AddEntityFrameworkStores<ApplicationDbContext>()
                  .AddDefaultTokenProviders();
+
+            services.AddScoped<IUserHelper, UserHelpers>();
 
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory
